@@ -23,7 +23,7 @@ Le projet Novade représente une migration complexe d'infrastructure technique, 
 - Complexité technique sous-estimée
 
 <details>
-<summary> 📊 Présentation du Projet</summary>
+<summary> 💻 Présentation du Projet</summary>
 
 ### Contexte
 Projet de migration et centralisation des données pour Novade, impliquant une transition complexe d'architecture technique.
@@ -68,7 +68,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary> 📊 Liste des Tâches</summary>
+<summary> 🔄 Liste des Tâches</summary>
 
 ### 1. Webhook Amplitude → Databricks
 - Création d'un script Azure Function pour capturer les événements Amplitude
