@@ -23,7 +23,7 @@ Le projet Novade représente une migration complexe d'infrastructure technique, 
 - Complexité technique sous-estimée
 
 <details>
-<summary>## 📊 Présentation du Projet</summary>
+<summary> 📊 Présentation du Projet</summary>
 
 ### Contexte
 Projet de migration et centralisation des données pour Novade, impliquant une transition complexe d'architecture technique.
@@ -68,7 +68,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>## 📊 Liste des Tâches</summary>
+<summary> 📊 Liste des Tâches</summary>
 
 ### 1. Webhook Amplitude → Databricks
 - Création d'un script Azure Function pour capturer les événements Amplitude
@@ -138,7 +138,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>## 📊 État Actuel du Projet</summary>
+<summary> 📊 État Actuel du Projet</summary>
 
 ### Vue d'Ensemble
 - **Phase en cours** : Migration n8n → Databricks/Amplitude
@@ -205,7 +205,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>## 🚨 Problèmes Majeurs Identifiés</summary>
+<summary> 🚨 Problèmes Majeurs Identifiés</summary>
 
 ### 1. Problèmes d'Autorisation et d'Accès
 - **Databricks**
@@ -292,7 +292,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>## 🎯 Plan d'Action Immédiat</summary>
+<summary> 🎯 Plan d'Action Immédiat</summary>
 
 ### Phase 1 : Résolution des Blocages (48h)
 1. **Gestion des Autorisations** (Urgent)
@@ -392,7 +392,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>## 📋 Tâches en Cours</summary>
+<summary> 📋 Tâches en Cours</summary>
 
 ### 1. Webhook Amplitude → Databricks (En Review)
 - [x] Création script Azure Function
@@ -527,7 +527,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>## 🔄 Intégrations en Attente</summary>
+<summary> 🔄 Intégrations en Attente</summary>
 
 ### 1. Drift → Amplitude (En Cours)
 #### État Actuel
@@ -661,7 +661,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>##⚠️ Points de Vigilance Critiques</summary>
+<summary>⚠️ Points de Vigilance Critiques</summary>
 
 ### 1. Problèmes d'Autorisation (URGENT)
 - **Databricks**
@@ -763,7 +763,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary>##💰 Budget et Facturation</summary>
+<summary>💰 Budget et Facturation</summary>
 
 ### Vue d'Ensemble Financière
 - **Budget Initial** : 21 375,00 € HT
