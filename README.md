@@ -773,9 +773,9 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - **Marge Tyrscale** : 7 125,00 € HT
 
 ### Répartition Initiale
-- **Jours Prévus** : 24 jours
+- **Jours Prévus** : 28,5 jours
 - **Gestion de Projet** : 4,5 jours (non consommés)
-- **Développement** : 19,5 jours
+- **Développement** : 24 jours (consommés ++)
 
 ### État Actuel
 - **Complexité Additionnelle**
