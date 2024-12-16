@@ -68,7 +68,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 </details>
 
 <details>
-<summary> 🔄 Liste des Tâches</summary>
+<summary> ✅ Liste des Tâches</summary>
 
 ### 1. Webhook Amplitude → Databricks
 - Création d'un script Azure Function pour capturer les événements Amplitude
