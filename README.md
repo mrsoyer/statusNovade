@@ -62,11 +62,6 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - Stabilité de l'infrastructure
 - Synchronisation temps réel
 
-### Contraintes Spécifiques
-- Exécution depuis la racine du projet
-- Fichiers Python dans `local_workspace`
-- Configuration via fichiers à la racine
-- Logs en anglais, communication en français
 </details>
 
 <details>
@@ -308,10 +303,6 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
    - [ ] Documentation des accès obtenus
 
 2. **Stabilisation Environnement Local** (Prioritaire)
-   - [ ] Standardisation de l'environnement
-     - Python depuis la racine
-     - Fichiers exécutables dans `local_workspace`
-     - Configuration à la racine
    - [ ] Gestion des dépendances
      - Versions Spark compatibles
      - Configuration Java
@@ -755,13 +746,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
   - Doublons = 0%
   - Data loss = 0%
 
-### Rappels Critiques
-- Exécuter depuis la racine du projet
-- Vérifier les configurations avant déploiement
-- Tester sur petit volume avant production
-- Documenter tous les changements
-- Maintenir les logs à jour
-- Sauvegarder les données critiques
+
 </details>
 
 <details>
