@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Le projet Novade représente une migration complexe d'infrastructure technique, passant d'une solution éprouvée (n8n/Segment/BigQuery) vers une nouvelle architecture (Databricks/Azure/Amplitude). Cette transition implique la centralisation et le traitement de données provenant de multiples sources (Salesforce, Drift, plan de tracking) avec un double objectif de stockage et d'analyse.
+Le projet Novade représente une migration complexe d'infrastructure technique, passant d'une solution éprouvée (n8n/Segment/BigQuery) vers une nouvelle architecture (Databricks/Azure/Amplitude). Cette transition implique la centralisation et le traitement de données provenant de multiples sources (Salesforce, Drift, plan de tracking) avec un double objectif de d'automatisation et d'analyse.
 
 ![Plan Novade](https://i.ibb.co/TYYdjMp/Capture-d-e-cran-2024-12-16-a-13-21-23.png)
 
