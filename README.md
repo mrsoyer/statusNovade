@@ -815,13 +815,15 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 
 2. **Alternative**
    - Utilisation partielle de la marge Tyrscale
+   - Uitiliser les jours de gestion de projet non consomé
    - Maintien du budget initial
    - Ajustement du périmètre
 
 ### État des Paiements
 1. **Déjà Reçu**
    - Acompte Novade : 10 687,50 € HT
-   - Versement Thomas : 6 000,00 € HT
+   - Acompte Thomas : 6 000,00 € HT - environs 2000 euros non réglé
+     
 
 2. **À Venir**
    - Solde Novade : 10 687,50 € HT
