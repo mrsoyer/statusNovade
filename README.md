@@ -22,46 +22,8 @@ Le projet Novade représente une migration complexe d'infrastructure technique, 
 - Nécessité d'ajustements budgétaires
 - Complexité technique sous-estimée
 
-<style>
-.section {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #fff;
-}
-
-.section summary {
-    font-weight: bold;
-    cursor: pointer;
-    padding: 8px;
-    background-color: #f8f9fa;
-    border-radius: 6px;
-}
-
-.section summary:hover {
-    background-color: #e9ecef;
-}
-
-.status-critical {
-    color: #dc3545;
-    font-weight: bold;
-}
-
-.status-warning {
-    color: #ffc107;
-    font-weight: bold;
-}
-
-.status-success {
-    color: #28a745;
-    font-weight: bold;
-}
-</style>
-
-<div class="section">
 <details>
-<summary>📊 Présentation du Projet</summary>
+<summary>## 📊 Présentation du Projet</summary>
 
 ### Contexte
 Projet de migration et centralisation des données pour Novade, impliquant une transition complexe d'architecture technique.
@@ -104,11 +66,9 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - Configuration via fichiers à la racine
 - Logs en anglais, communication en français
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>📊 Liste des Tâches</summary>
+<summary>## 📊 Liste des Tâches</summary>
 
 ### 1. Webhook Amplitude → Databricks
 - Création d'un script Azure Function pour capturer les événements Amplitude
@@ -132,7 +92,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - Test d'insertion et d'organisation des données
 
 ### 4. Récupération des Événements Drift → Amplitude
-- Écriture d'un script pour récupérer les événements Drift
+- Écriture d'un script pour récupérer les ��vénements Drift
 - Planification du script sur Databricks pour exécution périodique
 - Envoi des données Drift vers Amplitude
 - Test de réception des données dans Amplitude et Databricks
@@ -176,15 +136,13 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - Communication
 - Clôture du projet
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>📊 État Actuel du Projet</summary>
+<summary>## 📊 État Actuel du Projet</summary>
 
 ### Vue d'Ensemble
 - **Phase en cours** : Migration n8n → Databricks/Amplitude
-- **Statut** : <span class="status-critical">Bloqué - Problèmes techniques critiques</span>
+- **Statut** : ⚠️ Bloqué - Problèmes techniques critiques
 - **Priorité** : Haute
 - **Progrès** : ~25%
 
@@ -194,13 +152,13 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - Sources de données : Plan de tracking, Salesforce, Drift
 
 ### Blocages Majeurs
-1. **Problèmes d'Autorisation** <span class="status-critical">(CRITIQUE)</span>
+1. **Problèmes d'Autorisation** ⚠️ (CRITIQUE)
    - Accès Databricks incomplet (création cluster)
    - Logs Azure inaccessibles
    - Permissions Salesforce partielles
    - Configuration Amplitude incomplète
 
-2. **Environnement de Développement** <span class="status-warning">(INSTABLE)</span>
+2. **Environnement de Développement** ⚠️ (INSTABLE)
    - Incompatibilités local/Databricks
    - Dépendances complexes (Spark, Java)
    - Clusters instables (redémarrages fréquents)
@@ -245,11 +203,9 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - Dépendances sur les autorisations
 - Complexité accrue de la maintenance
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>🚨 Problèmes Majeurs Identifiés</summary>
+<summary>## 🚨 Problèmes Majeurs Identifiés</summary>
 
 ### 1. Problèmes d'Autorisation et d'Accès
 - **Databricks**
@@ -334,11 +290,9 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
   - Documentation partielle
   - Dette technique croissante
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>🎯 Plan d'Action Immédiat</summary>
+<summary>## 🎯 Plan d'Action Immédiat</summary>
 
 ### Phase 1 : Résolution des Blocages (48h)
 1. **Gestion des Autorisations** (Urgent)
@@ -373,7 +327,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
    - [ ] Documentation
      - README par composant
      - Guide de déploiement
-     - Procédures de test
+     - Proc��dures de test
 
 ### Phase 2 : Développement Sécurisé (72h)
 1. **Mise en Place Tests**
@@ -436,11 +390,9 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
    - Premier import test réussi
    - Documentation technique initiale
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>📋 Tâches en Cours</summary>
+<summary>## 📋 Tâches en Cours</summary>
 
 ### 1. Webhook Amplitude → Databricks (En Review)
 - [x] Création script Azure Function
@@ -467,7 +419,7 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
   - [ ] Tests d'insertion à faire
 
 - [ ] Organisation des Données
-  - [x] Scripts de base ��crits
+  - [x] Scripts de base écrits
   - [ ] Jobs périodiques en attente
   - [ ] Tests d'intégrité à implémenter
   - [ ] Alertes à configurer
@@ -573,11 +525,9 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - **Intégrations** : 60% complété
 - **Tests** : 20% complété
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>🔄 Intégrations en Attente</summary>
+<summary>## 🔄 Intégrations en Attente</summary>
 
 ### 1. Drift → Amplitude (En Cours)
 #### État Actuel
@@ -709,11 +659,9 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
    - Validation complète Salesforce
    - Tests d'intégration
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>⚠️ Points de Vigilance Critiques</summary>
+<summary>##⚠️ Points de Vigilance Critiques</summary>
 
 ### 1. Problèmes d'Autorisation (URGENT)
 - **Databricks**
@@ -812,406 +760,10 @@ Projet de migration et centralisation des données pour Novade, impliquant une t
 - Documenter tous les changements
 - Maintenir les logs à jour
 - Sauvegarder les données critiques
-
 </details>
-</div>
 
-<div class="section">
 <details>
-<summary>📝 Recommandations</summary>
-
-### 1. Actions Immédiates (24-48h)
-#### 1.1 Stabilisation Environnement
-- **Local**
-  - [ ] Standardiser l'environnement Python
-  - [ ] Nettoyer les dépendances conflictuelles
-  - [ ] Centraliser les fichiers de configuration
-  - [ ] Organiser les scripts dans `local_workspace`
-
-- **Databricks**
-  - [ ] Documenter les erreurs de connexion
-  - [ ] Créer un cluster de développement stable
-  - [ ] Tester les connexions de base
-  - [ ] Valider les permissions minimales
-
-#### 1.2 Gestion des Accès
-- **Escalade Prioritaire**
-  - [ ] Liste exhaustive des accès manquants
-  - [ ] Demande formelle par plateforme
-  - [ ] Suivi quotidien des tickets
-  - [ ] Tests de validation post-accès
-
-- **Solutions Temporaires**
-  - [ ] Développement en mode dégradé
-  - [ ] Tests locaux simulés
-  - [ ] Documentation des workarounds
-  - [ ] Plan de migration vers solution finale
-
-### 2. Actions à Court Terme (1-2 semaines)
-#### 2.1 Organisation du Code
-- **Structure**
-  - [ ] Séparation claire des composants
-  - [ ] Standardisation des logs
-  - [ ] Gestion centralisée des configurations
-  - [ ] Tests unitaires de base
-
-- **Documentation**
-  - [ ] Guide d'installation
-  - [ ] Procédures de déploiement
-  - [ ] Points de contrôle critiques
-  - [ ] Troubleshooting guide
-
-#### 2.2 Monitoring et Tests
-- **Base Monitoring**
-  - [ ] Logs essentiels
-  - [ ] Métriques de performance
-  - [ ] Alertes critiques
-  - [ ] Dashboard basique
-
-- **Tests Fondamentaux**
-  - [ ] Validation des données
-  - [ ] Tests de connexion
-  - [ ] Vérification des formats
-  - [ ] Tests d'intégration simples
-
-### 3. Actions à Moyen Terme (2-4 semaines)
-#### 3.1 Optimisation
-- **Performance**
-  - [ ] Optimisation des requêtes
-  - [ ] Gestion du batch processing
-  - [ ] Configuration des clusters
-  - [ ] Monitoring avancé
-
-- **Sécurité**
-  - [ ] Migration vers Key Vault
-  - [ ] Gestion des secrets
-  - [ ] Validation des accès
-  - [ ] Audit des logs
-
-#### 3.2 Automatisation
-- **Déploiement**
-  - [ ] Pipeline CI/CD
-  - [ ] Tests automatisés
-  - [ ] Déploiement continu
-  - [ ] Rollback automatique
-
-- **Maintenance**
-  - [ ] Scripts de maintenance
-  - [ ] Backup automatique
-  - [ ] Nettoyage données
-  - [ ] Rotation des logs
-
-### 4. Actions à Long Terme (1-2 mois)
-#### 4.1 Industrialisation
-- **Infrastructure**
-  - [ ] Architecture haute disponibilité
-  - [ ] Scaling automatique
-  - [ ] Disaster recovery
-  - [ ] Monitoring complet
-
-- **Documentation**
-  - [ ] Documentation technique complète
-  - [ ] Guides utilisateurs
-  - [ ] Procédures d'exploitation
-  - [ ] Plans de maintenance
-
-### Points de Vigilance
-1. **Priorités**
-   - Stabilité avant fonctionnalités
-   - Tests avant déploiement
-   - Documentation continue
-   - Communication régulière
-
-2. **Risques**
-   - Dépendances externes
-   - Compatibilité versions
-   - Performance données
-   - Sécurité accès
-
-3. **Contrôle**
-   - Validation étape par étape
-   - Tests réguliers
-   - Métriques claires
-   - Feedback utilisateurs
-
-### Métriques de Succès
-- **Technique**
-  - Uptime > 99.9%
-  - Latence < 1s
-  - Erreurs < 0.1%
-  - Tests > 80%
-
-- **Projet**
-  - Délais respectés
-  - Budget maintenu
-  - Satisfaction utilisateurs
-  - Documentation complète
-
-</details>
-</div>
-
-<div class="section">
-<details>
-<summary>🔍 Configuration Requise</summary>
-
-### 1. Structure du Projet
-```plaintext
-project_root/
-├── .env                    # Variables d'environnement (ne pas commiter)
-├── config/
-│   ├── databricks.yaml     # Configuration Databricks (ne pas commiter)
-│   ├── amplitude.yaml      # Configuration Amplitude (ne pas commiter)
-│   └── azure.yaml         # Configuration Azure (ne pas commiter)
-├── local_workspace/
-│   ├── webhook/
-│   ├── salesforce_sync/
-│   └── drift_sync/
-└── tests/
-```
-
-### 2. Prérequis Système
-- Python 3.8+
-- Java 8+ (pour Spark local)
-- Git
-- Accès Internet stable
-- RAM minimale : 8GB
-- Espace disque : 20GB
-
-### 3. Fichiers de Configuration
-#### 3.1 Structure .env
-```plaintext
-# Databricks
-DATABRICKS_HOST=xxx
-DATABRICKS_TOKEN=xxx
-DATABRICKS_CLUSTER_ID=xxx
-
-# Amplitude
-AMPLITUDE_API_KEY=xxx
-
-# Azure
-AZURE_FUNCTION_URL=xxx
-
-# Salesforce
-SF_USERNAME=xxx
-SF_PASSWORD=xxx
-SF_TOKEN=xxx
-```
-
-### 4. Dépendances Python
-```plaintext
-# requirements.txt
-databricks-connect>=13.0
-requests>=2.28.0
-python-dotenv>=0.19.0
-simple-salesforce>=1.12.0
-amplitude-analytics>=1.1.0
-azure-functions>=1.12.0
-```
-
-### 5. Points de Configuration Importants
-- **Exécution** : Toujours depuis la racine du projet
-- **Fichiers Python** : Dans `local_workspace`
-- **Logs** : En anglais, niveau INFO minimum
-- **Tests** : Dans le dossier `tests`
-- **Configuration** : Fichiers à la racine
-
-### 6. Accès Requis
-- **Databricks**
-  - Accès Workspace
-  - Permissions Cluster
-  - Accès Tables
-
-- **Azure**
-  - Accès Function App
-  - Permissions Logs
-  - Configuration Webhook
-
-- **Amplitude**
-  - Clé API
-  - Accès Dashboard
-  - Permissions Projet
-
-### 7. Sécurité
-- Ne jamais commiter les fichiers `.env`
-- Ne pas partager les tokens
-- Utiliser des secrets sécurisés
-- Restreindre les accès IP si possible
-- Rotation régulière des clés
-
-### 8. Rappels Critiques
-- Vérifier les configurations avant déploiement
-- Tester en local avant push
-- Sauvegarder les configurations sensibles
-- Documenter les changements
-- Maintenir les accès à jour
-
-</details>
-</div>
-
-<div class="section">
-<details>
-<summary>📅 Planning Proposé</summary>
-
-### Planning d'Exécution sur 6 Semaines
-
-### Semaine 1 : Setup & Configuration
-#### Jour 1-2 : Environnement
-- [ ] Clone du repository
-- [ ] Installation environnement local
-  ```bash
-  # Dans project_root/
-  python -m venv venv
-  source venv/bin/activate  # ou venv\Scripts\activate sous Windows
-  pip install -r requirements.txt
-  ```
-- [ ] Vérification des accès
-  - Databricks
-  - Azure
-  - Amplitude
-  - Salesforce
-
-#### Jour 3-4 : Architecture
-- [ ] Analyse du code existant
-  - `webhook.py`
-  - `historical_import.py`
-  - Scripts de synchronisation
-- [ ] Tests des composants existants
-- [ ] Documentation des problèmes rencontrés
-
-#### Jour 5 : Tests Initiaux
-- [ ] Test connexions
-- [ ] Validation formats données
-- [ ] Vérification logs
-
-### Semaine 2 : Infrastructure
-#### Jour 1-2 : Databricks
-- [ ] Configuration cluster dev
-  ```python
-  # Example cluster config
-  {
-    "spark_version": "13.3.x-scala2.12",
-    "node_type_id": "Standard_DS3_v2",
-    "num_workers": 1
-  }
-  ```
-- [ ] Tests connexion locale
-- [ ] Validation tables
-
-#### Jour 3-4 : Webhooks & Azure
-- [ ] Setup Azure Functions
-- [ ] Tests webhooks
-- [ ] Validation payload
-
-#### Jour 5 : Monitoring
-- [ ] Setup logs
-- [ ] Configuration alertes
-- [ ] Tests monitoring
-
-### Semaine 3 : Développement Core
-#### Jour 1-2 : Import Données
-```python
-# Structure import attendue
-def import_data(source, destination):
-    """
-    source: 'salesforce', 'drift', 'bigquery'
-    destination: 'amplitude', 'databricks'
-    """
-    pass
-```
-- [ ] Import test Salesforce
-- [ ] Import test Drift
-- [ ] Validation données
-
-#### Jour 3-4 : Synchronisation
-- [ ] Setup jobs périodiques
-- [ ] Tests synchronisation
-- [ ] Gestion erreurs
-
-#### Jour 5 : Tests & Documentation
-- [ ] Tests unitaires
-- [ ] Tests intégration
-- [ ] Documentation technique
-
-### Semaine 4 : Intégrations
-#### Priorités par Source
-1. **Salesforce** (2 jours)
-   - Format événements
-   - Synchronisation 5min
-   - Validation données
-
-2. **Drift** (2 jours)
-   - Structure données
-   - Tests connexion
-   - Import initial
-
-3. **BigQuery** (1 jour)
-   - Export données
-   - Import Amplitude
-   - Validation
-
-### Semaine 5 : Optimisation & Tests
-#### Performance (3 jours)
-- [ ] Optimisation requêtes
-- [ ] Gestion batch
-- [ ] Tests charge
-```python
-# Exemple batch processing
-def process_batch(records, batch_size=1000):
-    for i in range(0, len(records), batch_size):
-        batch = records[i:i + batch_size]
-        try:
-            process_records(batch)
-        except Exception as e:
-            log_error(e, batch)
-```
-
-#### Tests (2 jours)
-- [ ] Tests bout en bout
-- [ ] Tests charge
-- [ ] Documentation tests
-
-### Semaine 6 : Finalisation
-#### Documentation (3 jours)
-- [ ] Guide technique
-- [ ] Procédures maintenance
-- [ ] Troubleshooting
-
-#### Déploiement (2 jours)
-- [ ] Validation finale
-- [ ] Mise en production
-- [ ] Monitoring post-déploiement
-
-### Points de Contrôle Quotidiens
-- Validation connexions
-- Vérification logs
-- Tests basiques
-- Push code commenté
-
-### Métriques de Progression
-- **Setup** : Environnement fonctionnel
-- **Dev** : Tests passent
-- **Prod** : Données synchronisées
-- **Docs** : Documentation à jour
-
-### Contacts Clés
-- **Support Databricks** : À définir
-- **Support Azure** : À définir
-- **Support Amplitude** : À définir
-- **Équipe Novade** : À définir
-
-### Rappels Importants
-- Exécuter depuis la racine
-- Vérifier `.env` avant tests
-- Documenter les erreurs
-- Commits clairs et documentés
-- Tests avant push
-
-</details>
-</div>
-
-<div class="section">
-<details>
-<summary>💰 Budget et Facturation</summary>
+<summary>##💰 Budget et Facturation</summary>
 
 ### Vue d'Ensemble Financière
 - **Budget Initial** : 21 375,00 € HT
@@ -1280,6 +832,4 @@ def process_batch(records, batch_size=1000):
 - Validation de l'enveloppe supplémentaire
 - Planning de facturation ajusté
 - Garanties de livraison
-
 </details>
-</div>
