@@ -1,145 +1,148 @@
-# Rapport de Suivi du Projet Novade
+# Novade Project Progress Report
 
-*Mise à jour du 16 décembre 2024*
+*Update as of December 16, 2024*
 
 ---
 
 ## Introduction
 
-Ce rapport présente l'état actuel du projet Novade, qui vise à migrer notre infrastructure technique vers une nouvelle architecture. L'objectif principal est de centraliser et de traiter les données provenant de diverses sources telles que Salesforce, Drift, et le plan de tracking, afin d'améliorer le stockage et l'analyse des données dans un environnement Databricks/Azure/Amplitude.
+This report presents the current status of the Novade project, which aims to migrate our technical infrastructure to a new architecture. The main goal is to centralize and process data from various sources such as Salesforce, Drift, and the tracking plan, to improve data storage and analysis in a Databricks/Azure/Amplitude environment.
 
-![Plan Novade](https://i.ibb.co/TYYdjMp/Capture-d-e-cran-2024-12-16-a-13-21-23.png)
+### Key Points and KPIs
 
-### Points Clés et KPIs
+- **Project Duration**: To date, 16 workdays have been dedicated out of the planned 24 days, which is 80% of the allocated time.
+- **Progress Made**: The majority of migration and integration scripts are in place, with ongoing tests to ensure stability and performance.
+- **Major Challenges**: Adapting Databricks workflows for complex automations, and managing permissions with Amplitude, Azure, and Salesforce.
+- **Envisioned Solutions**: Migration to more flexible solutions like Azure Blob Storage and Synapse Analytics for better data management.
 
-- **Durée du Projet** : À ce jour, 16 jours de travail ont été consacrés sur les 24 jours prévus, soit 80% du temps alloué.
-- **Progrès Réalisés** : La majorité des scripts de migration et d'intégration sont en place, avec des tests en cours pour assurer la stabilité et la performance.
-- **Défis Majeurs** : Adaptation des workflows Databricks pour des automatisations complexes, et gestion des autorisations avec Amplitude, Azure, et Salesforce.
-- **Solutions Envisagées** : Migration vers des solutions plus flexibles comme Azure Blob Storage et Synapse Analytics pour une meilleure gestion des données.
-
-Ce document est conçu pour fournir une vue d'ensemble claire et accessible des progrès réalisés, des défis rencontrés et des solutions envisagées. Nous restons engagés à travailler en étroite collaboration avec toutes les parties prenantes pour assurer le succès de cette migration.
+This document is designed to provide a clear and accessible overview of the progress made, challenges encountered, and solutions considered. We remain committed to working closely with all stakeholders to ensure the success of this migration.
 
 ---
 
-## 📊 Présentation du Projet
+## 📊 Project Overview
 
-Le projet Novade consiste en la migration d'une solution éprouvée (n8n/Segment/BigQuery) vers une nouvelle architecture (Databricks/Azure/Amplitude). Cette transition a pour but de centraliser et de traiter les données provenant de diverses sources (Salesforce, Drift, plan de tracking) afin d'améliorer le stockage et l'analyse des données.
+The Novade project involves migrating from a proven solution (n8n/Segment/BigQuery) to a new architecture (Databricks/Azure/Amplitude). This transition aims to centralize and process data from various sources (Salesforce, Drift, tracking plan) to enhance data storage and analysis.
 
-### Objectifs Principaux
-- **Migration complète de l'infrastructure**
-- **Centralisation des données dans Databricks**
-- **Mise en place des automatisations**
-- **Maintien de la continuité de service**
-- **Optimisation des performances**
-
----
-
-## 📅 Historique du Projet
-
-### Timeline des Réunions et Progrès
-
-#### Sprint 1 : Weekly - 12 Novembre
-- **Travail réalisé** : Préparation des premiers scripts sur Databricks.
-- **Problèmes rencontrés** :
-  - Problème de création de destination Amplitude.
-  - Problème d'autorisation sur GitHub.
-- **Solutions trouvées** : Aucune solution définitive à ce stade.
-- **Temps de travail** : 3 jours.
-
-#### Sprint 2 : Weekly - 18 Novembre
-- **Travail réalisé** : Mise en place du connecteur Amplitude vers Databricks et tests.
-- **Problèmes rencontrés** :
-  - Coût pour environ 1000 données : 400 €.
-  - Problème d'autorisation Salesforce pour la création d'applications.
-- **Solutions trouvées** : Aucune solution définitive à ce stade.
-- **Temps de travail** : 3 jours.
-
-#### Sprint 3 : Weekly - 26 Novembre
-- **Travail réalisé** : Script de migration Salesforce, création et tests.
-- **Problèmes rencontrés** :
-  - Données antérieures à 1 mois ne s'importent pas dans Databricks.
-  - Les données ne sont pas envoyées correctement.
-- **Solutions trouvées** : Mise en place d'une double importation pour garantir que toutes les données nécessaires soient transférées.
-- **Coût** : Environ 50 € pour 200 événements envoyés.
-- **Temps de travail** : 3 jours.
-
-#### Sprint 4 et 5 : Weekly - 10 Décembre
-- **Travail réalisé** : Création d'un environnement local, déploiement sur Databricks ou Azure lorsque l'accès aux logs sera disponible. Création de compatibilité des scripts pour un double environnement.
-- **Problèmes rencontrés** :
-  - Architecture lourde due au triple environnement.
-  - Rendre les scripts compatibles pour Azure/local et Databricks/local.
-- **Solutions trouvées** : Création d'un environnement local pour effectuer les tests.
-- **Temps de travail** : 7 jours.
-
-#### Sprint 6 : Weekly - 17 Décembre
-- **Travail réalisé** : Ajustements pour rendre compatibles les librairies Spark et Salesforce.
-- **Problèmes rencontrés** :
-  - Clusters Databricks instables, redémarrages fréquents.
-- **Solutions trouvées** : Recherche d'une solution pour un cluster stable.
-- **Temps de travail** : 3 jours.
+### Main Objectives
+- **Complete infrastructure migration**
+- **Data centralization in Databricks**
+- **Implementation of automations**
+- **Maintenance of service continuity**
+- **Performance optimization**
 
 ---
 
-## 🚨 Problèmes Majeurs Identifiés
+## 📅 Project History
 
-1. **Problèmes d'Autorisation** : Accès limité aux ressources nécessaires sur Amplitude, Azure et Salesforce.
-2. **Environnement de Développement** : Incompatibilités entre les environnements locaux et Databricks, entraînant des instabilités.
-3. **Gestion des Données** : Difficultés dans la validation et l'intégration des données provenant de différentes sources.
-4. **Limitations des Workflows Databricks** : Les workflows de Databricks, principalement conçus pour l'analyse de données et de petites automatisations périodiques, ne répondent pas efficacement aux exigences de notre projet de grande envergure qui nécessite des automatisations complexes et continues.
+### Timeline of Meetings and Progress
+
+#### Sprint 1: Weekly - November 12
+- **Work Done**: Preparation of the first scripts on Databricks.
+- **Encountered Issues**:
+  - Problem creating Amplitude destination.
+  - Authorization issue on GitHub.
+- **Found Solutions**: No definitive solution at this stage.
+- **Work Time**: 3 days.
+
+#### Sprint 2: Weekly - November 18
+- **Work Done**: Setup of the Amplitude connector to Databricks and testing.
+- **Encountered Issues**:
+  - Cost for about 1000 data points: €400.
+  - Salesforce authorization problem for application creation.
+- **Found Solutions**: No definitive solution at this stage.
+- **Work Time**: 3 days.
+
+#### Sprint 3: Weekly - November 26
+- **Work Done**: Salesforce migration script creation and testing.
+- **Encountered Issues**:
+  - Data older than 1 month not importing into Databricks.
+  - Data not being sent correctly.
+- **Found Solutions**: Implementation of a double import to ensure all necessary data is transferred.
+- **Cost**: About €50 for 200 events sent.
+- **Work Time**: 3 days.
+
+#### Sprint 4 and 5: Weekly - December 10
+- **Work Done**: Creation of a local environment, deployment on Databricks or Azure when access to logs is available. Making scripts compatible for a dual environment.
+- **Encountered Issues**:
+  - Heavy architecture due to the triple environment.
+  - Making scripts compatible for Azure/local and Databricks/local.
+- **Found Solutions**: Creation of a local environment for testing.
+- **Work Time**: 7 days.
+
+#### Sprint 6: Weekly - December 17
+- **Work Done**: Adjustments to make Spark and Salesforce libraries compatible.
+- **Encountered Issues**:
+  - Unstable Databricks clusters, frequent restarts.
+- **Found Solutions**: Searching for a solution for a stable cluster.
+- **Work Time**: 3 days.
 
 ---
 
-## 💡 Solutions Identifiées
+## 🚨 Major Identified Issues
 
-Les solutions d'automatisation de Databricks qui m'ont été imposées sont beaucoup trop coûteuses et contraignantes. Databricks est principalement dédié à la création de notebooks pour l'analyse de données ou de petites automatisations. La création de connecteurs alourdit également le projet.
+1. **Authorization Issues**: Limited access to necessary resources on Amplitude, Azure, and Salesforce.
+2. **Development Environment**: Incompatibilities between local environments and Databricks, leading to instabilities.
+3. **Data Management**: Difficulties in validating and integrating data from different sources.
+4. **Limitations of Databricks Workflows**: Databricks workflows, mainly designed for data analysis and small periodic automations, do not effectively meet the requirements of our large-scale project that requires complex and continuous automations.
 
-### Solution Proposée
+---
 
-Amplitude vient de créer une nouvelle destination de données Azure Blob Storage native. Voici comment nous pouvons procéder :
+## 💡 Identified Solutions
 
-1. **Amplitude → Azure Blob Storage** : 
-   - Exportez les données depuis Amplitude (événements, utilisateurs fusionnés) directement dans Azure Blob Storage grâce à l'intégration native. Les fichiers sont généralement en format JSON, CSV ou Parquet.
+The Databricks automation solutions imposed on me are far too costly and restrictive. Databricks is primarily dedicated to creating notebooks for data analysis or small automations. The creation of connectors also burdens the project.
 
-2. **Azure Blob Storage → Azure Synapse Analytics** : 
-   - Chargez les données dans Synapse via :
-     - **PolyBase** : Requêtes directes sur les fichiers Blob sans duplication.
-     - **COPY INTO** : Importation des fichiers dans des tables internes pour des analyses plus rapides.
-   - **Automatisation** : Utilisez Synapse Pipelines pour planifier et orchestrer les flux de données entre Blob Storage et Synapse.
+### Proposed Solution
 
-### Choix de l'Automatisation
+Amplitude has just created a new native Azure Blob Storage data destination. Here's how we can proceed:
 
-Pour l'automatisation, il faudra choisir entre deux options :
+1. **Amplitude → Azure Blob Storage**:
+   - Export data from Amplitude (merged events, users) directly into Azure Blob Storage through native integration. Files are typically in JSON, CSV, or Parquet format.
 
-- **n8n** : Si vous optez pour n8n, cela permettra une intégration facile grâce à des scripts déjà réalisés. n8n est idéal pour des workflows visuels et des automatisations simples.
+2. **Azure Blob Storage → Azure Synapse Analytics**:
+   - Load data into Synapse via:
+     - **PolyBase**: Direct queries on Blob files without duplication.
+     - **COPY INTO**: Importing files into internal tables for faster analysis.
+   - **Automation**: Use Synapse Pipelines to schedule and orchestrate data flows between Blob Storage and Synapse.
+
+### Automation Choices
+
+For automation, you will need to choose between two options:
+
+- **n8n**: If you opt for n8n, it will allow easy integration through already completed scripts. n8n is ideal for visual workflows and simple automations.
   
-- **Python hébergé sur Azure Functions** : Cette option offre plus de flexibilité et de contrôle sur le traitement des données, mais nécessite une gestion plus technique. Cela peut être plus adapté si des traitements complexes sont nécessaires.
+- **Python hosted on Azure Functions**: This option offers more flexibility and control over data processing but requires more technical management. This may be more suitable if complex processing is necessary.
 
-### Estimation du Temps
+### Revised Time Estimation
 
-| Étape                                   | Durée estimée |
-|-----------------------------------------|---------------|
-| Exportation Amplitude → Blob Storage    | 3 heures      |
-| Chargement Blob Storage → Synapse       | 4 heures      |
-| Automatisation avec Synapse Pipelines    | 5 heures      |
-| Vérifications et documentation          | 5 heures      |
-| **Total estimé**                       | **17 heures** |
+| Step                                         | Estimated Duration |
+|----------------------------------------------|--------------------|
+| Amplitude Export to Blob Storage             | 4 hours            |
+| Blob Storage Loading to Synapse              | 5 hours            |
+| Automation with Synapse Pipelines            | 6 hours            |
+| Verifications and documentation              | 6 hours            |
+| Installation of n8n on Azure                 | 4 hours            |
+| Configuration of Python and automation framework | 4 hours          |
+| Final tests and adjustments                  | 3 hours            |
+| **Total Estimated**                          | **32 hours**       |
 
-### Avantages
+### Details of Revisions
 
-- **Workflow sur n8n** installé sur Azure : Adaptation facile grâce à des scripts déjà réalisés.
-- **Python hébergé sur Azure Functions** : Flexibilité pour des traitements plus complexes.
-- **Point d'alerte** : Afin de faciliter cette intégration, j'aurais besoin que tous les accès soient débloqués.
+- **Export and Loading**: An additional hour for each step to account for potential adjustments and performance testing.
+- **Automation with Synapse Pipelines**: An extra hour to allow for more detailed configuration and integration testing.
+- **Installation of n8n on Azure**: Two additional hours to include time for troubleshooting configuration and security issues.
+- **Configuration of Python and automation framework**: An extra hour to ensure a complete installation of dependencies and initial tests.
+- **Final tests and adjustments**: Three hours to test the entire system, adjust workflows, and ensure everything is functioning as expected.
 
-Cette solution peut être rapidement mise en place, sera beaucoup plus facile à maintenir et sera beaucoup moins coûteuse.
-
----
-
-## ⚠️ Points de Vigilance
-
-- **Suivi des Autorisations** : Continuer à surveiller l'accès aux ressources critiques pour éviter des blocages futurs.
-- **Stabilité des Environnements** : Assurer que les environnements de développement et de production restent synchronisés et stables.
-- **Documentation** : Maintenir une documentation à jour pour faciliter la communication entre les équipes et garantir la continuité des opérations.
+These adjustments provide a buffer to manage unforeseen issues and ensure that the project stays on track while minimizing the risk of delays.
 
 ---
 
-Ce rapport vise à fournir une vue d'ensemble claire et concise de l'état du projet Novade, en mettant l'accent sur les défis et les solutions. Nous restons engagés à travailler en étroite collaboration avec toutes les parties prenantes pour assurer le succès de cette migration.
+## ⚠️ Points of Caution
+
+- **Authorization Monitoring**: Continue to monitor access to critical resources to prevent future blockages.
+- **Stability of Environments**: Ensure that development and production environments remain synchronized and stable.
+- **Documentation**: Maintain up-to-date documentation to facilitate communication between teams and ensure operational continuity.
+
+---
+
+This report aims to provide a clear and concise overview of the state of the Novade project, focusing on challenges and solutions. We remain committed to working closely with all stakeholders to ensure the success of this migration.
