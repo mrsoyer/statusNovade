@@ -87,6 +87,33 @@ The Novade project involves migrating from a proven solution (n8n/Segment/BigQue
 
 ---
 
+## 🚨 Major Identified Issues
+
+1. **Authorization Issues**: Limited access to necessary resources on Amplitude, Azure, and Salesforce.
+2. **Development Environment**: Incompatibilities between local environments and Databricks, leading to instabilities.
+3. **Data Management**: Difficulties in validating and integrating data from different sources.
+4. **Limitations of Databricks Workflows**: Databricks workflows, mainly designed for data analysis and small periodic automations, do not effectively meet the requirements of our large-scale project that requires complex and continuous automations.
+
+---
+
+## 💸 Databricks Cost Estimation
+
+### Cost per 1K Events
+
+Novade's chosen Databricks implementation costs €8 per 1000 events processed, higher than initially projected.
+
+### Estimated Import Cost
+
+Using Databricks to import 32,000 contacts on Salesforce with 25 events each would result in approximately €6,400 in processing costs.
+
+### Monthly Website Cost
+
+Monthly Databricks processing for 12,000 visitors with 10 events each would amount to approximately €1,000.
+
+**Warning**: Current costs with the chosen Databricks solution are significantly higher than initially estimated. Process optimization is strongly recommended to reduce these operational expenses.
+
+---
+
 ## 💡 Identified Solutions
 
 The Databricks automation solutions imposed on me are far too costly and restrictive. Databricks is primarily dedicated to creating notebooks for data analysis or small automations. The creation of connectors also burdens the project.
